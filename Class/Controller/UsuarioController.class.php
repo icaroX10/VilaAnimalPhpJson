@@ -1,5 +1,10 @@
 <?php
-	require_once('../DAL/UsuarioDao.php');
+	if(file_exists("Class/DAL/UsuarioDao.php")){
+		require_once("Class/DAL/UsuarioDao.php");	
+	}else{
+		require_once("../DAL/UsuarioDao.php");	
+	}
+	
 	class UsuarioController{
 		protected $usuarioDao;
 		function __construct(){

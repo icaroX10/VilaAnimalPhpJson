@@ -1,5 +1,10 @@
 <?php 
-	require_once('../Model/Usuario.class.php');
+	if(file_exists('Class/Model/Usuario.class.php')){
+		require_once('Class/Model/Usuario.class.php');	
+	}else{
+		require_once('../Model/Usuario.class.php');	
+	}
+	
 	class UsuarioDao{
 		protected $tabela = "usuario";
 

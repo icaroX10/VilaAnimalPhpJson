@@ -1,0 +1,147 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    min-height: 80px;
+    background: rgba(13,147,73,0.7);
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    margin: 31px 20px;
+    display: inline-block;
+}
+.menu-principal-container > ul{
+    float: right;
+    width: auto;
+    padding: 30px 0;
+}
+.menu-principal-container > ul >li{
+    display: inline-block;
+}
+.menu-principal-container > ul >li>a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 31px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.menu-principal-container > ul >li>a:hover{
+    background: #076f36;
+    padding: 31px 20px;
+    color: #e8fd34;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    background: url(../img/fundo1.png);
+    width: 100%;
+}
+.conteudo{
+    margin-top: 80px;
+    background: #fff;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/**************************** CONTEUDO *************************/
+
+.title{
+    font-weight: bold;
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 35px 0 ; 
+}
+.conteudo>h3{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0d9349;
+    padding: 10px 0;
+}
+.conteudo>h3>b{
+    color: #000;
+}
+.conteudo>.pontos{
+    margin: 20px auto;
+}
+/**************************** FOOTER *************************/
+.footer{
+    border-top: 3px solid #000;
+    width: 100%;
+    height: 200px;
+    background: #076f36
+}
+.foot_inf >.logo{
+    width: 191px;
+    padding: 20px 0;
+}
+.foot_inf{
+    float: left;
+    margin: 20px 0;
+    width: 191px;
+}
+.foot_inf>span{
+    color: #fff;
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+.foot_end{
+    width: 400px;
+    float: left;
+    padding: 60px 100px;
+}
+.foot_end > p, .foot_end b{
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+}
+.foot_end b{
+    font-weight: bold;
+}
+.foot-menu{
+    float: left;
+    margin-top: 20px;
+}
+.foot-menu, .foot-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.foot-menu a:hover{
+    color: #fcf657;
+}
+.foot-menu li{
+    padding-top: 20px;
+}
+.foot_rs{
+    margin-top: 40px;
+    float: right;
+    background: url(../img/F_icon.png)no-repeat;
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+.foot_rs:hover{
+    background-position: bottom left;
+}

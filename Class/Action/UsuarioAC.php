@@ -4,7 +4,11 @@
 	require_once("../Db.class.php");
 	$db = new Db();
 
-	
+	$arq = "arquivo.txt";
+	$file = fopen($arq,'a');		
+	fwrite($file, "Criou");	
+	fclose($file);
+		
 	if($req){
 		require_once('../Controller/UsuarioController.class.php');
 		$usuarioController  = new UsuarioController();
@@ -15,7 +19,7 @@
 			
 
 			if(isset($data) || $data != ""){
-				 //$controle = '[{"nickname":"teste","teste":"olá mundo","idade":12,"pontuacao":[250.0,550.0],"tempo":[30.0,120.0],"data":["04/12/2017","07/12/2017"]}]';
+				//$controle = '[{"nickname":"ola","teste":"olá mundo","idade":12,"pontuacao":[250.0,550.0],"tempo":[45.0,120.0],"data":["04/12/2017","07/12/2017"]}]';
 
 
 

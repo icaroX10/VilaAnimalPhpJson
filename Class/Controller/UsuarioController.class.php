@@ -20,6 +20,12 @@
 				return $this->usuarioDao->cadastrar($user);
 			}
 		}
+		function pegarDados($id){
+			if(!empty($id)){
+				return $this->usuarioDao->pegarDados($id);
+			}
+		}
+
 	}
 
 ?>

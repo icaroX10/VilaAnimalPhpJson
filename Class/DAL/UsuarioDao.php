@@ -7,11 +7,24 @@
 	
 	class UsuarioDao{
 		protected $tabela = "usuario";
+		protected $backupSql = "SELECT * FROM paciente INNER JOIN paciented ON paciente.id=paciented.paciente_id INNER JOIN dados ON dados.id=paciented.dados_id ";
+
 
 		function dadosPaciente(){
 			try{
-				$sql = "SELECT * FROM paciente INNER JOIN paciented ON paciente.id=paciented.paciente_id INNER JOIN dados ON dados.id=paciented.dados_id ";
+				$sql = "SELECT * FROM paciente";
 				$stm = Db::prepare($sql);
+				$stm->execute();
+				return $stm->fetchAll(PDO::FETCH_ASSOC);
+			}catch(PDOException $e){
+				echo $e->getMessage();
+			}
+		}
+		function pegarDados($id){
+			try{
+				$sql = "SELECT * FROM dados INNER JOIN paciented ON dados.id=paciented.dados_id WHERE paciente_id=:id ";
+				$stm = Db::prepare($sql);
+				$stm->bindValue(":id",$id);
 				$stm->execute();
 				return $stm->fetchAll(PDO::FETCH_ASSOC);
 			}catch(PDOException $e){
